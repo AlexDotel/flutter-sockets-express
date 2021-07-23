@@ -1,3 +1,5 @@
+const Band = require('../models/band')
+
 class Bands {
   constructor() {
     this.bands = [];
@@ -7,12 +9,12 @@ class Bands {
     this.bands.push(band);
   }
 
-  getBand() {
-    this.bands;
+  getBands() {
+    return this.bands;
   }
 
   deleteBand(id = "") {
-    this.bands.filter((band) => band.id !== id);
+    this.bands = this.bands.filter((band) => band.id !== id);
     return this.bands;
   }
 
@@ -29,3 +31,4 @@ class Bands {
 }
 
 module.exports = Bands;
+// module.exports = Band;
