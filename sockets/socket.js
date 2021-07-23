@@ -45,9 +45,4 @@ io.on("connection", (client) => {
     console.log('Banda Eliminada: ' + bandToDelete.name);
   });
 
-  // client.on("emitirSaludo", (payload) => {
-  //   console.log("Mensaje a difundir: ", payload);
-  //   // io.emit("nuevoMensaje", "Saludos " + payload); //Emite a todos
-  //   client.broadcast.emit("nuevoMensaje", payload); //Emite a todos menos al emisor
-  // });
 });
